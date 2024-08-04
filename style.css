@@ -32,7 +32,7 @@ header {
   height: 150px;
 }
 
-header>a {
+header > a {
   background: var(--teal);
   padding: 10px 25px;
   color: var(--white);
@@ -40,19 +40,28 @@ header>a {
   font-size: 20px;
   border-radius: 5px;
   transition: all 0.5s ease;
-
 }
 
-.red {
-  background: var(--red);
-}
-
-header>a:hover {
+header > a:hover {
   scale: 0.9;
 }
 
 .sectionSpacer {
   height: 200px;
+}
+
+.name {
+  padding-top: 25px;
+}
+
+label {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.nameInput {
+  width: 350px;
+  height: 35px;
 }
 
 .questionsSection {
@@ -73,11 +82,16 @@ header>a:hover {
   background: var(--teal);
   width: 45px;
   height: 45px;
-  align-content: center;
   border-radius: 50px;
+  overflow: hidden;
+}
+
+.red {
+  background: var(--red);
 }
 
 .bookmark {
+  margin-top: 5px;
   margin-left: 5px;
   width: 35px;
   height: 35px;
@@ -86,4 +100,9 @@ header>a:hover {
 .standard-question {
   width: 570px;
   height: 250px;
+}
+
+.submitButton {
+  width: 300px;
+  height: 35px;
 }
