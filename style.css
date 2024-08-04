@@ -1,0 +1,89 @@
+:root {
+  --white: #eaf2ef;
+  --black: #0b090a;
+  --teal: #00a9a5;
+  --red: #e35d6a;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: var(--white);
+}
+
+.mainWrapper {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+header {
+  padding: 25px 0px;
+  background: var(--black);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  position: fixed;
+  width: 100vw;
+  height: 150px;
+}
+
+header>a {
+  background: var(--teal);
+  padding: 10px 25px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+
+}
+
+.red {
+  background: var(--red);
+}
+
+header>a:hover {
+  scale: 0.9;
+}
+
+.sectionSpacer {
+  height: 200px;
+}
+
+.questionsSection {
+  margin: 25px 0px;
+}
+
+.number-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-number {
+  padding: 15px;
+}
+
+.bookmarkWrapper {
+  background: var(--teal);
+  width: 45px;
+  height: 45px;
+  align-content: center;
+  border-radius: 50px;
+}
+
+.bookmark {
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+}
+
+.standard-question {
+  width: 570px;
+  height: 250px;
+}
