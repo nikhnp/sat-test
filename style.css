@@ -8,6 +8,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  scroll-padding: 200px;
 }
 
 body {
@@ -78,8 +79,14 @@ label {
   padding: 15px;
 }
 
+.bookmark-section {
+  display: flex;
+}
+
 .bookmarkWrapper {
   background: var(--teal);
+  margin: 5px;
+
   width: 45px;
   height: 45px;
   border-radius: 50px;
@@ -91,10 +98,13 @@ label {
 }
 
 .bookmark {
-  margin-top: 5px;
-  margin-left: 5px;
+  margin: 5px;
   width: 35px;
   height: 35px;
+}
+
+.remove {
+  width: 0px;
 }
 
 .standard-question {
@@ -105,4 +115,49 @@ label {
 .submitButton {
   width: 300px;
   height: 35px;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainWrapper {
+    max-width: 750px;
+  }
+
+  header > a {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  .mainWrapper {
+    padding: 0px 10vw;
+  }
+
+  header {
+    grid-template-columns: repeat(auto-fill, 35px);
+  }
+
+  header > a {
+    padding: 5px 5px;
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .nameInput {
+    width: 200px;
+    height: 35px;
+  }
+
+  .standard-question {
+    width: 285px;
+    height: 125px;
+  }
 }
